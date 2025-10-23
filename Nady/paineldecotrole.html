@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel - Controle de Extintores</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Controle de Extintores</h1>
+    <nav>
+      <a href="relatorios.html">Relatórios</a>
+      <a href="index.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Adicionar Extintor</h2>
+      <form id="formExtintor">
+        <input type="text" placeholder="Código do Extintor" required>
+        <input type="text" placeholder="Tipo (PQS, CO₂, etc.)" required>
+        <input type="date" required>
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="table-section">
+      <h2>Lista de Extintores</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Tipo</th>
+            <th>Validade</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Exemplo de linha -->
+          <tr class="ok">
+            <td>E001</td>
+            <td>PQS 4kg</td>
+            <td>2025-06-10</td>
+            <td>OK</td>
+            <td><button>Remover</button></td>
+          </tr>
+          <tr class="vencido">
+            <td>E002</td>
+            <td>CO₂ 6kg</td>
+            <td>2023-12-01</td>
+            <td>Vencido</td>
+            <td><button>Remover</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
