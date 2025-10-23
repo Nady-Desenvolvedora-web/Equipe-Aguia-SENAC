@@ -1,0 +1,17 @@
+html, body{
+    height:  100%; /*Utiliza 100% da pagina*/
+}
+
+body{
+    font-family: Poppins;
+    color: #ffffff; /*letra do cabeçalho*/
+    background-color: #ffffff; /*Cor da pagina*/
+}
+
+.topo{
+    display: flex; /* alinhar logo e menu lado a lado. */
+    justify-content: space-between; /* Justifica todos os elementos */
+    align-items: center; /* Centraliza os elementos */
+    padding: 10px; /* o espaço das palavras para margem, o afastamento das laterais. Quanto maior o padding, maior a barra lateral e o tamanho do cabeçalho */
+    background: #2F4F80; /* cor do cabeçalho é esse, esse e diferente do fundo */
+}
